@@ -59,22 +59,58 @@
         <div id="level" class="sections hide">
             <h2 id="user">Welcome User</h2>
             <h3>Choose Your Level</h3>
-            <ul>
-                <!--this function is run when form is submited-->
-                <!--<form onsubmit="gotoQuiz(event)">-->
-                <input name="level" type="radio" value="Beginner" checked>
-                <label>Beginner</label>
-                <input name="level" type="radio" value="Intermediate">
-                <label>Intermediate</label>
-                <input name="level" type="radio" value="Advanced">
-                <label>Advanced</label>
-                <input name="level" type="radio" value="Expert">
-                <label>Expert</label>
+
+            <!--this function is run when form is submited-->
+            <!--<form onsubmit="gotoQuiz(event)">-->
+            <input name="level" type="radio" value="Beginner" checked>
+            <label>Beginner</label>
+            <input name="level" type="radio" value="Intermediate">
+            <label>Intermediate</label>
+            <input name="level" type="radio" value="Advanced">
+            <label>Advanced</label>
+            <input name="level" type="radio" value="Expert">
+            <label>Expert</label>
+            <div>
+                <button onclick="goToQuiz(event)">Next</button>
+            </div>
+            <!--</form>-->
+
+        </div>
+    </section>
+
+    <!--Quiz section and score tracker-->
+    <section>
+        <div id="quiz-div" class="sections hide">
+            <div>
                 <div>
-                    <button onclick="goToQuiz(event)">Next</button>
+                    <h5 id="level-choosen">Level Choosen:</h5>
+                </div>
+                <h4 id="quiz-question">What is the capital of USA</h4>
+
+                <!--this function is run when form is submited-->
+                <!--<form onsubmit="forQuiz(event)">-->
+                <div>
+                    <div>
+                        <input name="question" type="radio" value="Washington DC">
+                        <label name="label-option" class="label">Washington DC</label>
+                    </div>
+                    <div>
+                        <input name="question" type="radio" value="Atlanta">
+                        <label name="label-option" class="label">Atlanta</label>
+                    </div>
+                    <div>
+                        <input name="question" type="radio" value="New York">
+                        <label name="label-option" class="label">New York</label>
+                    </div>
                 </div>
                 <!--</form>-->
-            </ul>
+                <div id="score-tracker">
+                    <img src="assets/images/green-tick.png" alt="green mark">
+                    <span id="score">0</span>
+                    <img src="assets/images/red-x.png" alt="red mark">
+                    <span id="failed">0</span>
+                </div>
+            </div>
         </div>
     </section>
 
