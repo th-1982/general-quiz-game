@@ -29,7 +29,7 @@
                         <!--create a username-->
                         <h3 id="create-username">Please create a username to start the game!</h3>
                         <!--this function is run when form is submited-->
-                        <!--<form action="/" onsubmit="(event) => console.log(event)">-->
+                        <!--<form action="/" "onsubmit=(event)">-->
                         <label for="user-input">Username:</label>
                         <input type="text" id="user-input" name="user-input" placeholder="Enter a username" required>
                         <div>
@@ -53,6 +53,30 @@
             </main>
         </div>
     </div>
+
+    <!--Choose level section-->
+    <section>
+        <div id="level" class="sections hide">
+            <h2 id="user">Welcome User</h2>
+            <h3>Choose Your Level</h3>
+            <ul>
+                <!--this function is run when form is submited-->
+                <!--<form onsubmit="gotoQuiz(event)">-->
+                <input name="level" type="radio" value="Beginner" checked>
+                <label>Beginner</label>
+                <input name="level" type="radio" value="Intermediate">
+                <label>Intermediate</label>
+                <input name="level" type="radio" value="Advanced">
+                <label>Advanced</label>
+                <input name="level" type="radio" value="Expert">
+                <label>Expert</label>
+                <div>
+                    <button onclick="goToQuiz(event)">Next</button>
+                </div>
+                <!--</form>-->
+            </ul>
+        </div>
+    </section>
 
 
     <script src="assets/js/script.js"></script>
