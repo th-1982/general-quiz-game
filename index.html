@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="general quiz to test your general knowledge on history, movies, geography, biology">
+    <meta name="keywords" content="general quiz, history quiz, geography quiz, , movies, biology quiz">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>General Quiz</title>
 </head>
 
 <body>
+    <header>
+        <h1>General Quiz</h1>
+        <p id="test-knowledge">Test your general Knowledge!</p>
+    </header>
+    <div id="all-section">
+        <div id="modal">
+            <main>
+                <section>
+                    <!--welcome section-->
+                    <div id="welcome" class="sections show">
+                        <!--create a username-->
+                        <h3 id="create-username">Please create a username to start the game!</h3>
+                        <!--this function is run when form is submited-->
+                        <!--<form action="/" onsubmit="(event) => console.log(event)">-->
+                        <label for="user-input">Username:</label>
+                        <input type="text" id="user-input" name="user-input" placeholder="Enter a username" required>
+                        <div>
+                            <button onclick="saveUsersName(event)">Submit</button>
+                        </div>
+                        <!--- </form>-->
+                        <div>
+                            <h4 id="rules">Rules:</h4>
+                            <ul id="instruction">
+                                <li>Create a username and click 'Submit'</li>
+                                <li>Do not refresh the page.</li>
+                                <li>Choose one of the 4 levels at which you would like to play.</li>
+                                <li>Answer 10 questions by clicking on your choosen answer.</li>
+                                <li>At the end your final score will display</li>
+                                <li>You can choose to play again.</li>
+                            </ul>
+                            <h3>Have Fun!!</h3>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
 
     <script src="assets/js/script.js"></script>
 </body>
