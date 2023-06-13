@@ -367,3 +367,98 @@ let arrayOfQuestions = {
     ],
 };
 
+// this is current question
+let currentQuestion = 1;
+let usersScore = 0;
+let failedQuestions = 0;
+
+// get the score h3 element
+let scoreh3 = document.getElementById('score');
+
+// get all multichoice questions
+let questions = document.getElementsByName('question');
+
+// get all labels
+let questionLabelElements = document.getElementsByName('label-option');
+
+questionLabelElements.forEach(question => {
+
+    // i want to loop through all the questions
+    question.addEventListener('click', getOptionAndNextQuestion);
+});
+
+
+// when a user selects an option i want to get the option
+// the user selected and go to the next question
+function getOptionAndNextQuestion(event) {
+    // this is the value of the option that was clicked
+    // event.target.value
+
+    // let optionUserClicked = event.target.value
+
+    let optionUserClicked = event.target.innerText;
+
+    // go and check the array to see if the option clicked
+    // was correct
+    // subtract 1 because array indexing starts from 0
+
+    // if option clicked is correct
+
+    // console.log(choosenLevel);
+
+    // console.log(arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].correctAnswer);
+
+    if (optionUserClicked == arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].correctAnswer) {
+
+        // if correct do something
+        // increase score
+        // console.log("Correct")
+
+        // parse as an integer to avoid string concatenation
+        scoreh3.innerHTML = parseInt(scoreh3.innerHTML) + 1;
+
+        // store the score
+        usersScore = parseInt(scoreh3.innerHTML);
+
+        // change current question by plus 1
+        ++currentQuestion;
+
+        // check if there is no next question
+        if (currentQuestion > 10) {
+
+            // take the user to score page
+            showUsersScore();
+        }
+        else {
+            // go to next question
+            nextQuestion();
+        }
+
+    }
+    else {
+        // if wrong do something
+        // console.log("Incorrect")
+        ++failedQuestions;
+
+        // get the element that will use to show the amount of failed questions
+        let failedQuestionSpan = document.getElementById('failed');
+
+        // set the inner text of the element to the failed questions variable
+        failedQuestionSpan.innerText = failedQuestions;
+
+        // change current question by plus 1
+        ++currentQuestion;
+
+        // check if there is no next question
+        if (currentQuestion > 10) {
+            // take the user to score page
+            showUsersScore();
+        }
+        else {
+            // go to next question
+            nextQuestion();
+        }
+    }
+}
+
+
