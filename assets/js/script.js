@@ -461,4 +461,62 @@ function getOptionAndNextQuestion(event) {
     }
 }
 
+// this function is for end of the quiz section
+// this function will run when the user has finished the quiz
+function showUsersScore() {
+    // get all sections
+    let quizSections = document.getElementsByClassName('sections');
 
+    // this will hide the previous section
+    quizSections[2].classList.remove('show');
+    quizSections[2].classList.add('hide');
+
+    // this will show the last section
+    quizSections[3].classList.remove('hide');
+    quizSections[3].classList.add('show');
+
+    // this will get the elements we will use to show the final score to the user
+    let userElement = document.getElementById('congratulate-user');
+    let userFinalScoreElement = document.getElementById('final-score');
+
+    // show the users name and final score
+    userElement.innerText = usersName;
+    userFinalScoreElement.innerText = usersScore;
+
+    // get the button that the user will press to play again
+    let playAgainButton = document.getElementById('play-again');
+
+    // add event listener so that when the user clicks the button
+    // it will take them to the home page
+    playAgainButton.addEventListener('click', takeUserToBeginning);
+}
+
+
+function takeUserToBeginning() {
+    // reset all scores
+    currentQuestion = 1;
+    usersScore = 0;
+    failedQuestions = 0;
+
+    // reset correct answered quesions
+    scoreh3.innerHTML = usersScore;
+
+    // get the element that will use to show the amount of failed questions
+    let failedQuestionSpan = document.getElementById('failed');
+
+    // reset failed questions
+    failedQuestionSpan.innerText = failedQuestions;
+
+    // get all quiz sections
+    let quizSections = document.getElementsByClassName('sections');
+
+    // hide the current section
+    quizSections[3].classList.add('hide');
+
+    // this will remove the hide class
+    quizSections[0].classList.remove('hide');
+
+    // after i want to show the next one
+    // this will add the show class
+    quizSections[1].classList.add('show');
+}
