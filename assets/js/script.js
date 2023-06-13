@@ -43,3 +43,71 @@ function saveUsersName(event) {
 
 }
 
+// this function is for choose level section
+
+function goToQuiz(event) {
+
+    // this is going to stop the page from refreshing
+    event.preventDefault();
+
+    let levels = document.getElementsByName('level');
+
+    // i want to loop through all the levels
+    // and find the one that was checked
+    levels.forEach(level => {
+
+        //this if state if the level checked is true
+        if (level.checked == true) {
+
+            // get the h5 that will display the level
+            let levelh5 = document.getElementById('level-choosen');
+
+            // display the level choosen to the user
+            levelh5.innerText = `Level Choosen: ${level.value}`;
+
+            // store the level
+            choosenLevel = level.value;
+        }
+    });
+
+    // get all sections
+    let quizSections = document.getElementsByClassName('sections');
+
+
+    // hide the current section
+    quizSections[1].classList.add('hide');
+
+    // this will remove the hide class
+    quizSections[2].classList.remove('hide');
+
+    // after i want to show the next one
+    // this will add the show class
+    quizSections[2].classList.add('show');
+
+    // get the current quiz question element
+    let quizQuestionh4 = document.getElementById('quiz-question');
+
+    // get the current options and their labels
+    let questionElements = document.getElementsByName('question');
+    let questionLabelElements = document.getElementsByClassName('label');
+
+    // change the inner text and value of all the elements i just got
+
+    // changing quiz question
+    quizQuestionh4.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
+
+    // changing options and labels
+    // loop through the current questions
+    questionElements.forEach((question, index) => {
+
+        // change the current value of the radio buttons
+        // to the current level
+        question.value = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
+        question.checked = false;
+
+        // change the current value of the labels
+        // to the current Level
+        questionLabelElements.item(index).textContent = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
+    });
+}
+
