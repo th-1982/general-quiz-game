@@ -520,3 +520,33 @@ function takeUserToBeginning() {
     // this will add the show class
     quizSections[1].classList.add('show');
 }
+
+// This function will add to the score and go the next question
+function nextQuestion() {
+    // get the current quiz question element
+    let quizQuestionh4 = document.getElementById('quiz-question');
+
+    // get the current options and their labels
+    let questionElements = document.getElementsByName('question');
+    let questionLabelElements = document.getElementsByClassName('label');
+
+    // change the inner text and value of all the elements I just got
+
+    // changing quiz question
+    // quizQuestionh4.innerHTML = arrayOfQuestions[currentQuestion - 1].question
+    quizQuestionh4.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
+
+    // changing options and labels
+    // loop through the current questions
+    questionElements.forEach((question, index) => {
+        // this is changing the current value of the radio buttons
+        // to the next question value
+        // question.value = arrayOfQuestions[currentQuestion - 1].options[index]
+        question.value = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
+        question.checked = false;
+
+        // this is changing the current value of the labels
+        // to the next question value
+        questionLabelElements.item(index).textContent = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
+    });
+}
