@@ -111,3 +111,259 @@ function goToQuiz(event) {
     });
 }
 
+// for quiz section and score tracker
+
+// I have an array of question objects
+
+// this is where all questions is stored
+let arrayOfQuestions = {
+    Beginner: [
+        {
+            id: 1,
+            question: "What is the capital of USA",
+            options: ["Washington DC", "Texas", "Atlanta"],
+            correctAnswer: "Washington DC"
+        },
+        {
+            id: 2,
+            question: "Who was the first President of USA ?",
+            options: ["Donald Trump", "Geoge Washington", "Barack Obama"],
+            correctAnswer: "Geoge Washington"
+        },
+        {
+            id: 3,
+            question: "How many players are allowed on a Soccer pitch?",
+            options: ["10 Players", "11 Players", "12 Players"],
+            correctAnswer: "11 Players"
+        },
+        {
+            id: 4,
+            question: "Which is the longest river in the world?",
+            options: ["River Nile", "River Niger", "Lake Chad"],
+            correctAnswer: "River Nile"
+        },
+        {
+            id: 5,
+            question: "How many days makes a week?",
+            options: ["10 Days", "7 Days", "11 Days"],
+            correctAnswer: "7 Days"
+        },
+        {
+            id: 6,
+            question: "Which country is the largest in the world ?",
+            options: ["Russia", "Canada", "Egypt"],
+            correctAnswer: "Russia"
+        },
+        {
+            id: 7,
+            question: "What is the capital of Germany ?",
+            options: ["Paris", "Berlin", "Munich"],
+            correctAnswer: "Berlin"
+        },
+        {
+            id: 8,
+            question: "Which Planet is the hottest ?",
+            options: ["Mercury", "Jupiter", "Venus"],
+            correctAnswer: "Mercury"
+        },
+        {
+            id: 9,
+            question: "How many teeth does an adult human have ?",
+            options: ["28", "32", "30"],
+            correctAnswer: "32"
+        },
+        {
+            id: 10,
+            question: "How many Planets are currently in the solar system ?",
+            options: ["8", "7", "9"],
+            correctAnswer: "8"
+        },
+    ],
+    Intermediate: [
+        {
+            id: 1,
+            question: "Which of the following is NOT a fruit?",
+            options: ["Mango", "Avocado", "Rice"],
+            correctAnswer: "Rice"
+        },
+        {
+            id: 2,
+            question: "How many hearts does an Octopus have ?",
+            options: ["1", "2", "3"],
+            correctAnswer: "3"
+        },
+        {
+            id: 3,
+            question: "How many permanent teeth does a dog have ?",
+            options: ["38", "36", "42"],
+            correctAnswer: "42"
+        },
+        {
+            id: 4,
+            question: "Which of these numbers is an odd number ?",
+            options: ["Eleven", "Twelve", "Ten"],
+            correctAnswer: "Eleven"
+        },
+        {
+            id: 5,
+            question: "Which flies a green, white, and orange (in that order) tricolor flag ?",
+            options: ["Ireland", "Ivory Coast", "Italy"],
+            correctAnswer: "Italy"
+        },
+        {
+            id: 6,
+            question: "Which city is home to the Brandenburg Gate ?",
+            options: ["Vienna", "Berlin", "Zurich"],
+            correctAnswer: "Berlin"
+        },
+        {
+            id: 7,
+            question: "Which of the following languages has the longest alphabet ?",
+            options: ["Greek", "Russian", "Arabic"],
+            correctAnswer: "Russian"
+        },
+        {
+            id: 8,
+            question: "Which app has the most total users ?",
+            options: ["Tik Tok", "Snapchat", "Instagram"],
+            correctAnswer: "Instagram"
+        },
+        {
+            id: 9,
+            question: "Where was tea invented ?",
+            options: ["China", "England", "USA"],
+            correctAnswer: "China"
+        },
+        {
+            id: 10,
+            question: "What is the strongest muscle in the human body ?",
+            options: ["Heart", "Jaw", "Glutes"],
+            correctAnswer: "Jaw"
+        },
+    ],
+    Advanced: [
+        {
+            id: 1,
+            question: "What company makes the Xperia model of smartphone ?",
+            options: ["Sony", "Nokia", "Samsung"],
+            correctAnswer: "Sony"
+        },
+        {
+            id: 2,
+            question: "Who is generally considered the inventor of the motor car?",
+            options: ["Henry Ford", "Henry M. Leland", "Karl Benz"],
+            correctAnswer: "Karl Benz"
+        },
+        {
+            id: 3,
+            question: "Which horoscope sign is a fish ?",
+            options: ["Aquarius", "Pisces", "Cancer"],
+            correctAnswer: "Pisces"
+        },
+        {
+            id: 4,
+            question: "What is the largest US state (by landmass) ?",
+            options: ["Alaska", "Texas", "California"],
+            correctAnswer: "Alaska"
+        },
+        {
+            id: 5,
+            question: "What spirit is used in making a Tom Collins ?",
+            options: ["Rum", "Gin", "Vodka"],
+            correctAnswer: "Gin"
+        },
+        {
+            id: 6,
+            question: "What city hosted the 2002 Olympic Games ?",
+            options: ["Beijing", "Tokyo", "Sydney"],
+            correctAnswer: "Sydney"
+        },
+        {
+            id: 7,
+            question: "Which of the following langauges is NOT driven from Latin ?",
+            options: ["French", "English", "Portuguese"],
+            correctAnswer: "English"
+        },
+        {
+            id: 8,
+            question: "Where was the first example of paper money used ?",
+            options: ["China", "Greece", "Turkey"],
+            correctAnswer: "China"
+        },
+        {
+            id: 9,
+            question: "How long did dinosaurs live on the earth ?",
+            options: ["100-150 million years", "150-200 million years", "200+ million years"],
+            correctAnswer: "150-200 million years"
+        },
+        {
+            id: 10,
+            question: "The fear of the insect is know as what ?",
+            options: ["Ailurophobia", "Arachnophobia", "Entomophobia"],
+            correctAnswer: "Entomophobia"
+        },
+    ],
+    Expert: [
+        {
+            id: 1,
+            question: "Who sang the title for the latest Bond film, No Time to Die ?",
+            options: ["Billie Eilish", "Sam Smith", "Adele"],
+            correctAnswer: "Billie Eilish"
+        },
+        {
+            id: 2,
+            question: "If you were looking at Iguazu Falls, on what continent would you be ?",
+            options: ["Asia", "Africa", "South America"],
+            correctAnswer: "South America"
+        },
+        {
+            id: 3,
+            question: "What number was the Apollo mission that successfully put a man on the moon for the first time in human history ?",
+            options: ["Apollo 11", "Apollo 13", "Apollo 12"],
+            correctAnswer: "Apollo 11"
+        },
+        {
+            id: 4,
+            question: "Who was the lead singer of the band The Who?",
+            options: ["Robert Plant", "Don Henley", "Roger Daltrey"],
+            correctAnswer: "Roger Daltrey"
+        },
+        {
+            id: 5,
+            question: "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?",
+            options: ["Accord", "Concorde", "Mirage"],
+            correctAnswer: "Concorde"
+        },
+        {
+            id: 6,
+            question: "Which Game of Thrones character is known as the Young Wolf?",
+            options: ["Sansa Stark", "Robb Stark", "Arya Stark"],
+            correctAnswer: "Robb Stark"
+        },
+        {
+            id: 7,
+            question: "How many plays do people (generally) believe that Shakespeare wrote?",
+            options: ["27", "47", "37"],
+            correctAnswer: "37"
+        },
+        {
+            id: 8,
+            question: "Who directed the Academy Award-winning movie, Gladiator?",
+            options: ["Ridley Scott", "James Cameron", "Steven Soderbergh"],
+            correctAnswer: "Ridley Scott"
+        },
+        {
+            id: 9,
+            question: "What Italian city is famous for its system of canals?",
+            options: ["Naples", "Venice", "Rome"],
+            correctAnswer: "Venice"
+        },
+        {
+            id: 10,
+            question: "Where was the earliest documented case of the Spanish flu?",
+            options: ["USA", "Mexico", "Spain"],
+            correctAnswer: "USA"
+        },
+    ],
+};
+
