@@ -20,113 +20,100 @@
         <h1>General Quiz</h1>
         <p id="test-knowledge">Test your general Knowledge!</p>
     </header>
-    <div id="all-section">
-        <div id="modal">
 
-            <main>
-                <section>
-                    <section>
-                        <!--welcome section-->
-                        <div id="welcome" class="sections show">
-                            <!--create a username-->
-                            <h3 id="create-username">Please create a username to start the game!</h3>
-                            <!--this function is run when form is submited-->
-                            <!--<form action="/" onsubmit="(event) => console.log(event)">-->
-                            <label for="user-input">Username:</label>
-                            <input type="text" id="user-input" name="user-input" placeholder="Enter a username"
-                                required>
-                            <div>
-                                <button onclick="saveUsersName(event)">Submit</button>
-                            </div>
-                            <!--- </form>-->
-                            <div>
-                                <h4 id="rules">Rules:</h4>
-                                <ul id="instruction">
-                                    <li>Create a username and click 'Submit'</li>
-                                    <li>Do not refresh the page.</li>
-                                    <li>Choose one of the 4 levels at which you would like to play.</li>
-                                    <li>Answer 10 questions by clicking on your choosen answer.</li>
-                                    <li>At the end your final score will display</li>
-                                    <li>You can choose to play again.</li>
-                                </ul>
-                                <h3>Have Fun!!</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--Choose level section-->
-                    <section>
-                        <div id="level" class="sections hide">
-                            <h2 id="user">Welcome User</h2>
-                            <h3>Choose Your Level</h3>
-                            <ul>
-                                <!--this function is run when form is submited-->
-                                <!--<form onsubmit="gotoQuiz(event)">-->
-                                <input name="level" type="radio" value="Beginner" checked>
-                                <label>Beginner</label>
-                                <input name="level" type="radio" value="Intermediate">
-                                <label>Intermediate</label>
-                                <input name="level" type="radio" value="Advanced">
-                                <label>Advanced</label>
-                                <input name="level" type="radio" value="Expert">
-                                <label>Expert</label>
-                                <div>
-                                    <button onclick="goToQuiz(event)">Next</button>
-                                </div>
-                                <!--</form>-->
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!--Quiz section and score tracker-->
-                    <section>
-                        <div id="quiz-div" class="sections hide">
-                            <div>
-                                <div>
-                                    <h5 id="level-choosen">Level Choosen:</h5>
-                                </div>
-                                <h4 id="quiz-question">What is the capital of USA</h4>
-                                <div>
-                                    <!--this function is run when form is submited-->
-                                    <!--<form onsubmit="forQuiz(event)">-->
-                                    <div>
-                                        <input name="question" type="radio" value="Washington DC">
-                                        <label name="label-option" class="label">Washington DC</label>
-                                    </div>
-                                    <div>
-                                        <input name="question" type="radio" value="Atlanta">
-                                        <label name="label-option" class="label">Atlanta</label>
-                                    </div>
-                                    <div>
-                                        <input name="question" type="radio" value="New York">
-                                        <label name="label-option" class="label">New York</label>
-                                    </div>
-                                    <!--</form>-->
-                                    <div id="score-tracker">
-                                        <img src="assets/images/green-tick.png" alt="green mark">
-                                        <span id="score">0</span>
-                                        <img src="assets/images/red-x.png" alt="red mark">
-                                        <span id="failed">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--End of quiz section-->
-                    <section>
-                        <div id="end-of-quiz-div" class="sections hide">
-                            <h2>Congratulations <span id="congratulate-user"></span></h2>
-                            <img src="assets/images/onlinejavascript5.jpg" width="400" alt="congratulation image">
-                            <h4>Your final score is <span id="final-score"></span> out of 10</h4>
-                            <h4>Do you want to play again?</h4>
-                            <button id="play-again">Play Again</button>
-                        </div>
-                    </section>
-                    <section>
-            </main>
+    <main>
+        <!--welcome section-->
+        <div id="welcome" class="sections show">
+            <!--create a username-->
+            <h3 id="create-username">Please create a username to start the game!</h3>
+            <!--this function is run when form is submited-->
+            <!--<form action="/" onsubmit="(event) => console.log(event)">-->
+            <label for="user-input">Username:</label>
+            <input type="text" id="user-input" name="user-input" placeholder="Enter a username" required>
+            <div>
+                <button onclick="saveUsersName(event)">Submit</button>
+            </div>
+            <!--- </form>-->
+            <div>
+                <h4 id="rules">Rules:</h4>
+                <ul id="instruction">
+                    <li>Create a username and click 'Submit'</li>
+                    <li>Do not refresh the page.</li>
+                    <li>Choose one of the 4 levels at which you would like to play.</li>
+                    <li>Answer 10 questions by clicking on your choosen answer.</li>
+                    <li>At the end your final score will display</li>
+                    <li>You can choose to play again.</li>
+                </ul>
+                <h3>Have Fun!!</h3>
+            </div>
         </div>
-    </div>
+
+        <!--Choose level section-->
+        <div id="level" class="sections hide">
+            <h2 id="user">Welcome User</h2>
+            <h3>Choose Your Level</h3>
+            <ul>
+                <!--this function is run when form is submited-->
+                <!--<form onsubmit="gotoQuiz(event)">-->
+                <input name="level" type="radio" value="Beginner" checked>
+                <label>Beginner</label>
+                <input name="level" type="radio" value="Intermediate">
+                <label>Intermediate</label>
+                <input name="level" type="radio" value="Advanced">
+                <label>Advanced</label>
+                <input name="level" type="radio" value="Expert">
+                <label>Expert</label>
+                <div>
+                    <button onclick="goToQuiz(event)">Next</button>
+                </div>
+                <!--</form>-->
+            </ul>
+        </div>
+
+        <!--Quiz section and score tracker-->
+        <div id="quiz-div" class="sections hide">
+            <div>
+                <div>
+                    <h5 id="level-choosen">Level Choosen:</h5>
+                </div>
+                <h4 id="quiz-question">What is the capital of USA</h4>
+                <div>
+                    <!--this function is run when form is submited-->
+                    <!--<form onsubmit="forQuiz(event)">-->
+                    <div>
+                        <input name="question" type="radio" value="Washington DC">
+                        <label name="label-option" class="label">Washington DC</label>
+                    </div>
+                    <div>
+                        <input name="question" type="radio" value="Atlanta">
+                        <label name="label-option" class="label">Atlanta</label>
+                    </div>
+                    <div>
+                        <input name="question" type="radio" value="New York">
+                        <label name="label-option" class="label">New York</label>
+                    </div>
+                    <!--</form>-->
+                    <div id="score-tracker">
+                        <img src="assets/images/green-tick.png" alt="green mark">
+                        <span id="score">0</span>
+                        <img src="assets/images/red-x.png" alt="red mark">
+                        <span id="failed">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--End of quiz section-->
+        <div id="end-of-quiz-div" class="sections hide">
+            <h2>Congratulations <span id="congratulate-user"></span></h2>
+            <img src="assets/images/onlinejavascript5.jpg" width="400" alt="congratulation image">
+            <h4>Your final score is <span id="final-score"></span> out of 10</h4>
+            <h4>Do you want to play again?</h4>
+            <button id="play-again">Play Again</button>
+        </div>
+    </main>
+
     <!--footer with social media links-->
     <footer>
         <a href="https://facebook.com" target="_blank" rel="noopener"
