@@ -475,22 +475,78 @@ function showUsersScore() {
     quizSections[3].classList.remove('hide');
     quizSections[3].classList.add('show');
 
-    // this will get the elements we will use to show the final score to the user
+    // this will get the elements I will use to show the final score to the user
+    let scoreMessage = document.getElementById('congratulate-message');
     let userElement = document.getElementById('congratulate-user');
     let userFinalScoreElement = document.getElementById('final-score');
+
+    // change message based on users score
+    // if the user scored below 6, show them this message
+    if (usersScore < 6) {
+        scoreMessage.innerText = "Good Job, Try Again ";
+    }
+    else {
+        scoreMessage.innerText = "Congratulations ";
+    }
 
     // show the users name and final score
     userElement.innerText = usersName;
     userFinalScoreElement.innerText = usersScore;
 
-    // get the button that the user will press to play again
-    let playAgainButton = document.getElementById('play-again');
+    // get the button that the user will press to take to the beginning
+    let noButton = document.getElementById('play-again');
 
     // add event listener so that when the user clicks the button
     // it will take them to the home page
-    playAgainButton.addEventListener('click', takeUserToBeginning);
+    noButton.addEventListener('click', takeUserToBeginning);
+
+    let yesButton = document.getElementById('yes');
+
+    // add event listener so that when the user clicks the button
+    // it will take them to the choose level page
+    yesButton.addEventListener('click', takeUserToChooseLevel);
 }
 
+// this will take the user to the choose level page
+function takeUserToChooseLevel() {
+    // reset all scores
+    currentQuestion = 1;
+    usersScore = 0;
+    failedQuestions = 0;
+
+    // reset correct answered quesions
+    scoreh3.innerHTML = usersScore;
+
+    // get the element that will use to show the amount of failed questions
+    let failedQuestionSpan = document.getElementById('failed');
+
+    // reset failed questions
+    failedQuestionSpan.innerText = failedQuestions;
+
+    // this is collecting the value of the input element and
+    // storing it in the usersName variable
+    usersName = inputElement.value;
+
+    // i want to a welcome message to the user
+    let userh3 = document.getElementById('user');
+
+    // this will show the users name on the next page
+    userh3.innerText = `Welcome ${usersName}`;
+
+    // get all quiz sections
+    let quizSections = document.getElementsByClassName('sections');
+
+    // hide the current section
+    // this will add the hide class to the welcome section
+    quizSections[3].classList.add('hide');
+
+    // this will remove the hide class
+    quizSections[1].classList.remove('hide');
+
+    // after i want to show the next one
+    // this will add the show class
+    quizSections[1].classList.add('show');
+}
 
 function takeUserToBeginning() {
     // reset all scores
@@ -501,7 +557,7 @@ function takeUserToBeginning() {
     // reset correct answered quesions
     scoreh3.innerHTML = usersScore;
 
-    // get the element that will use to show the amount of failed questions
+    // get the element that we will use to show the amount of failed questions
     let failedQuestionSpan = document.getElementById('failed');
 
     // reset failed questions
