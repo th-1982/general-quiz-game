@@ -126,9 +126,9 @@ let arrayOfQuestions = {
         },
         {
             id: 2,
-            question: "Who was the first President of USA ?",
-            options: ["Donald Trump", "Geoge Washington", "Barack Obama"],
-            correctAnswer: "Geoge Washington"
+            question: "The first American President to live in the White House was ?",
+            options: ["Abraham Lincoln", "Geoge Washington", "John Adams"],
+            correctAnswer: "John Adams"
         },
         {
             id: 3,
@@ -144,9 +144,9 @@ let arrayOfQuestions = {
         },
         {
             id: 5,
-            question: "How many days makes a week?",
-            options: ["10 Days", "7 Days", "11 Days"],
-            correctAnswer: "7 Days"
+            question: "For drugs, what does efficacy means?",
+            options: ["Dosage", "Effectiveness", "Safety"],
+            correctAnswer: "Effectiveness"
         },
         {
             id: 6,
@@ -182,9 +182,9 @@ let arrayOfQuestions = {
     Intermediate: [
         {
             id: 1,
-            question: "Which of the following is NOT a fruit?",
-            options: ["Mango", "Avocado", "Rice"],
-            correctAnswer: "Rice"
+            question: "Which of these factors in a community is a biotic factor?",
+            options: ["PH", "Predation", "Temperature"],
+            correctAnswer: "Predation"
         },
         {
             id: 2,
@@ -194,15 +194,15 @@ let arrayOfQuestions = {
         },
         {
             id: 3,
-            question: "How many permanent teeth does a dog have ?",
-            options: ["38", "36", "42"],
-            correctAnswer: "42"
+            question: "How many lifeboats did the Titanic have ?",
+            options: ["24", "20", "14"],
+            correctAnswer: "20"
         },
         {
             id: 4,
-            question: "Which of these numbers is an odd number ?",
-            options: ["Eleven", "Twelve", "Ten"],
-            correctAnswer: "Eleven"
+            question: "Mycoproteins are produced using which organism ?",
+            options: ["Animals", "Plants", "Fungi"],
+            correctAnswer: "Fungi"
         },
         {
             id: 5,
@@ -218,9 +218,9 @@ let arrayOfQuestions = {
         },
         {
             id: 7,
-            question: "Which of the following languages has the longest alphabet ?",
-            options: ["Greek", "Russian", "Arabic"],
-            correctAnswer: "Russian"
+            question: "Which of these units is most suitable for measuring the length of a cell ?",
+            options: ["Metre", "Micrometre", "kilometre"],
+            correctAnswer: "Micrometre"
         },
         {
             id: 8,
@@ -256,15 +256,15 @@ let arrayOfQuestions = {
         },
         {
             id: 3,
-            question: "Which horoscope sign is a fish ?",
-            options: ["Aquarius", "Pisces", "Cancer"],
-            correctAnswer: "Pisces"
+            question: "How long did it take to build the Titanic ?",
+            options: ["Three Years", "One Year", "Two Years"],
+            correctAnswer: "Three Years"
         },
         {
             id: 4,
-            question: "What is the largest US state (by landmass) ?",
-            options: ["Alaska", "Texas", "California"],
-            correctAnswer: "Alaska"
+            question: "Which era immediately followed the American Civil War ?",
+            options: ["Reformation", "Renaissance", "Reconstruction"],
+            correctAnswer: "Reconstruction"
         },
         {
             id: 5,
@@ -280,9 +280,9 @@ let arrayOfQuestions = {
         },
         {
             id: 7,
-            question: "Which of the following langauges is NOT driven from Latin ?",
-            options: ["French", "English", "Portuguese"],
-            correctAnswer: "English"
+            question: "In what country did the Battle of Waterloo take place ?",
+            options: ["French", "Belgium", "Germany"],
+            correctAnswer: "Belgium"
         },
         {
             id: 8,
@@ -298,9 +298,9 @@ let arrayOfQuestions = {
         },
         {
             id: 10,
-            question: "The fear of the insect is know as what ?",
-            options: ["Ailurophobia", "Arachnophobia", "Entomophobia"],
-            correctAnswer: "Entomophobia"
+            question: "Which of these was not a battle fought in World War II  ?",
+            options: ["Anzio", "Okinawa", "Gettysburg"],
+            correctAnswer: "Gettysburg"
         },
     ],
     Expert: [
@@ -354,15 +354,15 @@ let arrayOfQuestions = {
         },
         {
             id: 9,
-            question: "What Italian city is famous for its system of canals?",
-            options: ["Naples", "Venice", "Rome"],
-            correctAnswer: "Venice"
+            question: "Which U.S. president was the first to appear on television?",
+            options: ["Abraham Lincoln", "Richard Nixon", "Franklin D. Roosevelt"],
+            correctAnswer: "Franklin D. Roosevelt"
         },
         {
             id: 10,
-            question: "Where was the earliest documented case of the Spanish flu?",
-            options: ["USA", "Mexico", "Spain"],
-            correctAnswer: "USA"
+            question: "What is the capital of Tuvalu?",
+            options: ["Lolua", "Asau", "Funafuti"],
+            correctAnswer: "Funafuti"
         },
     ],
 };

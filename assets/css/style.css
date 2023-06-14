@@ -12,7 +12,7 @@ body {
     background-image: url(../images/bg-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    background-color: rgb(192, 192, 192);
     font-weight: 400;
     background-position: center;
 }
@@ -47,6 +47,7 @@ main {
     justify-content: center;
     text-align: center;
     background-color: rgba(71, 69, 84, 0.6);
+    color: #fff;
     height: 600px;
     width: 550px;
 
@@ -201,6 +202,23 @@ ul li {
 }
 
 /* styling of end of the quiz section */
+#yes {
+    border: 2px solid rgb(213, 165, 194);
+    border-radius: 10px;
+    width: 150px;
+    background-color: rgb(220, 22, 203, 0.8);
+    color: gray;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#yes:hover {
+    background-color: rgb(230, 236, 240);
+    color: rgb(255, 0, 213);
+}
+
 #play-again {
     border: 2px solid rgb(213, 165, 194);
     border-radius: 10px;
