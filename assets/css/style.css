@@ -254,6 +254,24 @@ footer a {
     margin: 0 20px 0 20px;
 }
 
+/* 404 page styling */
+.error-container {
+    text-align: center;
+
+}
+
+.error-container h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(255, 0, 213);
+}
+
+
+.error-container p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(255, 0, 213);
+}
 
 /* Media queries */
 /* Setting responsiveness of quiz at different screen width */
