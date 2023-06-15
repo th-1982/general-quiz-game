@@ -111,25 +111,25 @@ label {
 #welcome input {
     width: 400px;
     height: 30px;
-    border: 2px solid rgb(230, 236, 240);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     margin-left: 15px;
 }
 
 button {
-    border: 2px solid rgb(230, 236, 240);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 100px;
     height: 40px;
     background-color: rgb(255, 0, 213);
     font-size: 20px;
-    color: gray;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     margin-top: 15px;
 }
 
 button:hover {
-    background-color: rgb(230, 236, 240);
+    background-color: rgb(255, 255, 255);
     color: rgb(255, 0, 213);
 }
 
@@ -178,7 +178,7 @@ ul li {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid rgb(230, 236, 240);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 #quiz-div label:hover {
@@ -203,11 +203,11 @@ ul li {
 
 /* styling of end of the quiz section */
 #yes {
-    border: 2px solid rgb(213, 165, 194);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 150px;
-    background-color: rgb(220, 22, 203, 0.8);
-    color: gray;
+    background-color: rgb(255, 0, 213);
+    color: rgb(255, 255, 255);
     height: 40px;
     font-size: 20px;
     font-weight: 600;
@@ -215,16 +215,16 @@ ul li {
 }
 
 #yes:hover {
-    background-color: rgb(230, 236, 240);
+    background-color: rgb(255, 255, 255);
     color: rgb(255, 0, 213);
 }
 
 #play-again {
-    border: 2px solid rgb(213, 165, 194);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 150px;
-    background-color: rgb(220, 22, 203, 0.8);
-    color: gray;
+    background-color: rgb(255, 0, 213);
+    color: rgb(255, 255, 255);
     height: 40px;
     font-size: 20px;
     font-weight: 600;
@@ -232,7 +232,7 @@ ul li {
 }
 
 #play-again:hover {
-    background-color: rgb(230, 236, 240);
+    background-color: rgb(255, 255, 255);
     color: rgb(255, 0, 213);
 }
 
@@ -254,6 +254,7 @@ footer a {
     margin: 0 20px 0 20px;
 }
 
+
 /* Media queries */
 /* Setting responsiveness of quiz at different screen width */
 
@@ -269,7 +270,7 @@ footer a {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
 
