@@ -482,7 +482,7 @@ function showUsersScore() {
 
     // change message based on users score
     // if the user scored below 6, show them this message
-    if (usersScore < 6) {
+    if (usersScore < 4) {
         scoreMessage.innerText = "Good Job, Try Again ";
     }
     else {
