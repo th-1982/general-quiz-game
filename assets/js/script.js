@@ -483,10 +483,17 @@ function showUsersScore() {
     // change message based on users score
     // if the user scored below 6, show them this message
     if (usersScore < 4) {
-        scoreMessage.innerText = "Good Job, Try Again ";
+        scoreMessage.innerText = "Done! Try Again ";
+    }
+    else if (usersScore < 6) {
+        scoreMessage.innerText = "Good Job ! Try Again ";
+    }
+    else if (usersScore < 9) {
+        scoreMessage.innerText = "Nice work ! Try Again ";
     }
     else {
-        scoreMessage.innerText = "Congratulations ";
+
+        scoreMessage.innerText = "Congratulations! Great Score ";
     }
 
     // show the users name and final score
