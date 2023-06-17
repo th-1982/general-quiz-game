@@ -228,6 +228,14 @@ ul li {
     color: rgb(255, 0, 213);
 }
 
+.congratulatory-image {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #fff;
+    max-width: 400px;
+    margin-top: 20px;
+
+}
+
 #play-again {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -327,4 +335,9 @@ footer a {
     ul li {
         font-size: 16px;
     }
+
+    .congratulatory-image{
+        width: 80%;
+    }
+
 }
