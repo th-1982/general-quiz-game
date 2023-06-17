@@ -215,13 +215,14 @@ ul li {
 #yes {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    width: 150px;
+    width: 100px;
     background-color: rgb(255, 0, 213);
     color: rgb(255, 255, 255);
     height: 40px;
     font-size: 20px;
     font-weight: 600;
     margin-top: 15px;
+    margin-right: 20px;
 }
 
 #yes:hover {
@@ -240,7 +241,7 @@ ul li {
 #play-again {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    width: 150px;
+    width: 100px;
     background-color: rgb(255, 0, 213);
     color: rgb(255, 255, 255);
     height: 40px;

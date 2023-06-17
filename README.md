@@ -114,7 +114,7 @@ As the site owner, I want users to ...
 
 #### Initial Stage
 
-At the early stage, the site will include a welcome section that displays the game's rules and lets the user create a username, and then the user is given a choice of four levels of difficulty of the game. Finally, the game will start and run through 10 questions at the chosen level. An end-of-game page will then load. Here the user can opt to play the game again.
+At the early stage, the site will include a welcome section that displays the game's rules and lets the user create a username, then the user is given a choice of four levels of difficulty of the game. Finally, the game will start and run through 10 questions at the chosen level. An end of game page will then load and the user can opt to play the game again.
 
 #### Future Additions
 
@@ -129,7 +129,35 @@ Finally, the Challenge Mode will be added, where the user will ask questions for
 
 The structure of the initial site will include three sections incorporated in the index.html page:
 
-1. **Welcome Section**  displays the game's rules and asks the user to create a username to play the game.
+1. **Welcome Section**  displays the rules of the game and asks the user to create a username to play the game.
+
+![Welcome](docs/wireframe/welcomesectionwireframe.jpg)
+
+2. **Choose Level Section** with four difficulty levels of the game to chhose from.
+
+![Level](docs/wireframe/chooselevelwireframe.jpg)
+
+3. **Quiz Section and score tracker** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score in a score area below the answers.
+
+![Quiz](docs/wireframe/quizsectionwireframe.jpg)
+
+4. **End of the Quiz Section** displays the users final score and level at which the game was played with a matching message. It gives the option to play the game again.
+
+![End of Quiz](docs/wireframe/endofquizsectionwireframe.jpg)
+
+5. **404 Page** - a 404 Error page is also included (404.html)
+
+### Skeleton
+
+As described in the previous section with wireframes, the online game site includes four interactive sections: a heading, a central display area, and a footer. The welcome section requires the user to create a username to continue the game. The user is then prompted to choose the level they want to play the game. Upon choosing a level, the game loads and runs, adding to the score of correct or failed answers as the answers are chosen. A page displaying the final score is displayed at the end of the game.
+
+#### Welcome Section
+
+<details>
+<summary>Screenshot of Welcome Section on desktop</summary>
+<img src="docs/readme_image/welcomescrn.jpg" width="750">
+</details>
+
 
 
 
