@@ -420,6 +420,11 @@ function getOptionAndNextQuestion(event) {
         // store the score
         usersScore = parseInt(scoreh3.innerHTML);
 
+        //add current question tracker
+        let currentQuestionSpan = document.getElementById("current-question");
+        currentQuestionSpan.innerText = currentQuestion + 1;
+
+
         // change current question by plus 1
         ++currentQuestion;
 
@@ -445,6 +450,10 @@ function getOptionAndNextQuestion(event) {
 
         // set the inner text of the element to the failed questions variable
         failedQuestionSpan.innerText = failedQuestions;
+
+        // add current question tracker
+        let currentQuestionSpan = document.getElementById("current-question");
+        currentQuestionSpan.innerText = currentQuestion + 1;
 
         // change current question by plus 1
         ++currentQuestion;
@@ -521,6 +530,10 @@ function takeUserToChooseLevel() {
     usersScore = 0;
     failedQuestions = 0;
 
+    // reset current question tracker
+    let currentQuestionSpan = document.getElementById("current-question");
+    currentQuestionSpan.innerText = 1;
+
     // reset correct answered quesions
     scoreh3.innerHTML = usersScore;
 
@@ -560,6 +573,9 @@ function takeUserToBeginning() {
     currentQuestion = 1;
     usersScore = 0;
     failedQuestions = 0;
+
+    let currentQuestionSpan = document.getElementById("current-question");
+    currentQuestionSpan.innerText = 1;
 
     // reset correct answered quesions
     scoreh3.innerHTML = usersScore;
