@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="general quiz to test your general knowledge on history, movies, geography, biology">
-    <meta name="keywords" content="general quiz, history quiz, geography quiz, , movies, biology quiz">
+    <meta name="description" content="general quiz game to test your general knowledge on history, movies, geography, biology">
+    <meta name="keywords" content="general quiz game, quiz game, history quiz, geography quiz, , movies, biology quiz">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 <body>
     <header>
         <h1>General Quiz</h1>
-        <p id="test-knowledge">Test your general Knowledge!</p>
+        <h2 id="test-knowledge">Test your general Knowledge!</h2>
     </header>
 
     <main>
@@ -32,13 +32,13 @@
             <!--this function is run when form is submited-->
             <!--<form action="/" onsubmit="(event) => console.log(event)">-->
             <label for="user-input">Username:</label>
-            <input type="text" id="user-input" name="user-input" required>
+            <input type="text" id="user-input" name="user-input"  required>
             <div>
                 <button onclick="saveUsersName(event)">Submit</button>
             </div>
             <!--- </form>-->
             <div>
-                <h4 id="rules">Rules:</h4>
+                <h3 id="rules">Rules:</h3>
                 <ul id="instruction">
                     <li>Create a username and click 'Submit'</li>
                     <li>Do not refresh the page.</li>
@@ -53,7 +53,7 @@
 
         <!--Choose level section-->
         <div id="level" class="sections hide">
-            <h2 id="user">Welcome User!</h2>
+            <h3 id="user">Welcome User!</h3>
             <h3>Choose Your Level:</h3>
             <ul>
                 <!--this function is run when form is submited-->
@@ -77,7 +77,7 @@
         <div id="quiz-div" class="sections hide">
             <div>
                 <div>
-                    <h5 id="level-choosen">Level Choosen:</h5>
+                    <h3 id="level-choosen">Level Choosen:</h3>
                 </div>
                 <h3 id="quiz-question">What is the capital of USA</h3>
                 <div>
@@ -97,7 +97,7 @@
                     </div>
                     <!--</form>-->
                     <div>
-                        <h4>Question <span id="current-question">1</span> of 10</h4>
+                        <h3>Question <span id="current-question">1</span> of 10</h3>
                     </div>
                     <div id="score-tracker">
                         <img src="assets/images/green-tick.png" alt="green mark">
@@ -111,10 +111,10 @@
 
         <!--End of quiz section-->
         <div id="end-of-quiz-div" class="sections hide">
-            <h2><span id="congratulate-message">Congratulations </span><span id="congratulate-user"></span></h2>
+            <h3><span id="congratulate-message">Congratulations </span><span id="congratulate-user"></span></h3>
             <img src="assets/images/congratulation-image.jpg" alt="congratulation image" class="congratulatory-image">
-            <h4>Your final score is <span id="final-score"></span> out of 10</h4>
-            <h4>Do you want to play again?</h4>
+            <h3>Your final score is <span id="final-score"></span> out of 10</h3>
+            <h3>Do you want to play again?</h3>
             <button id="yes">Yes</button>
             <button id="play-again">No</button>
         </div>

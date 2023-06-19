@@ -19,9 +19,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
     font-family: 'Open sans', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -35,7 +33,7 @@ header {
 }
 
 #test-knowledge {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 10px;
     padding-bottom: 5px;
 }
@@ -62,37 +60,19 @@ main {
 
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
-h2 {
-    font-size: 28px;
-    margin-top: 10px;
-}
 
 h3 {
     font-size: 24px;
     margin-top: 10px;
 }
 
-h4 {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-h5 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
 
 /* styling of welcome section and choose level section */
 
-input {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
+input,
 label {
     font-size: 24px;
     margin-top: 20px;
@@ -143,7 +123,7 @@ button:hover {
 }
 
 #rules {
-    margin-top: 20px;
+    margin-top: 24px;
     font-size: 24px;
 }
 
@@ -189,10 +169,12 @@ ul li {
     margin-right: auto;
     border: 2px solid rgb(255, 255, 255);
     padding-top: 10px;
+    background-color: rgb(255, 0, 213);
 }
 
 #quiz-div label:hover {
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 213);
 }
 
 #score-tracker {
@@ -202,7 +184,7 @@ ul li {
 }
 
 #score {
-    color: #AEE727;
+    color: #27e74a;
     font-size: 30px;
 }
 
@@ -263,7 +245,7 @@ footer {
     margin-top: 20px;
     height: 100px;
     width: 100%;
-    background-color: rgb(230, 236, 240);
+    background-color: rgb(230, 236, 240); 
 }
 
 footer a {
@@ -307,13 +289,13 @@ footer a {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
 @media (max-width: 480px) {
     main {
-        background-color: rgba(71, 69, 84, 0.6);
+        background-color: rgba(71, 69, 84, 0.7);
         height: 600px;
         width: 300px;
 

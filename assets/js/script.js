@@ -60,10 +60,10 @@ function goToQuiz(event) {
         if (level.checked == true) {
 
             // get the h5 that will display the level
-            let levelh5 = document.getElementById('level-choosen');
+            let levelh3 = document.getElementById('level-choosen');
 
             // display the level choosen to the user
-            levelh5.innerText = `Level Choosen: ${level.value}`;
+            levelh3.innerText = `Level Choosen: ${level.value}`;
 
             // store the level
             choosenLevel = level.value;
@@ -85,7 +85,7 @@ function goToQuiz(event) {
     quizSections[2].classList.add('show');
 
     // get the current quiz question element
-    let quizQuestionh4 = document.getElementById('quiz-question');
+    let quizQuestionh3 = document.getElementById('quiz-question');
 
     // get the current options and their labels
     let questionElements = document.getElementsByName('question');
@@ -94,7 +94,7 @@ function goToQuiz(event) {
     // change the inner text and value of all the elements i just got
 
     // changing quiz question
-    quizQuestionh4.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
+    quizQuestionh3.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
 
     // changing options and labels
     // loop through the current questions
@@ -603,7 +603,7 @@ function takeUserToBeginning() {
 // This function will add to the score and go the next question
 function nextQuestion() {
     // get the current quiz question element
-    let quizQuestionh4 = document.getElementById('quiz-question');
+    let quizQuestionh3 = document.getElementById('quiz-question');
 
     // get the current options and their labels
     let questionElements = document.getElementsByName('question');
@@ -613,7 +613,7 @@ function nextQuestion() {
 
     // changing quiz question
     // quizQuestionh4.innerHTML = arrayOfQuestions[currentQuestion - 1].question
-    quizQuestionh4.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
+    quizQuestionh3.innerHTML = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].question;
 
     // changing options and labels
     // loop through the current questions
