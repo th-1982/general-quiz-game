@@ -215,6 +215,9 @@ As described in the previous section with wireframes, the online game site inclu
 * Featured on all pages (and the 404 page).
 * Includes links to the social media pages that the general quiz maintains: Facebook, Instagram, and YouTube.
 * All links open in a new window.
+* The footer is fully responsive.
+
+
 
 
 
