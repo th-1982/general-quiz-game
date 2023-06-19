@@ -158,6 +158,68 @@ As described in the previous section with wireframes, the online game site inclu
 <img src="docs/readme_image/welcomescrn.jpg" width="750">
 </details>
 
+* Features an input field. The user is required to create a username to continue. A submit button initiates the next section if a username has been entered. The rules of the game are also diplayed.
+
+#### Choose A Level Section
+
+<details>
+<summary>Screenshot of the Choose a Level Section</summary>
+<img src="docs/readme_image/chooselevelscrn.jpg" width="750">
+</details>
+
+* Features four clickable elements containing the choices of levels the user can opt for: Beginner, Intermediate, Advanced, and Expert.
+* Includes the next buuton for the user to navigate to the quiz section.
+
+#### Quiz Section and Score Tracker
+
+<details>
+<summary>Screenshot of Quiz Section</summary>
+<img src="docs/readme_image/quizsectionscrn.jpg" width="750">
+</details>
+
+* Features the level the user has chosen.
+* Features the question displayed at the top of the central content area.
+* Three clickable text elements contain the multiple-choice answers.
+* A scoring area below the answers updates the correct and failed answer tally every time the user chooses an answer. It also keeps track of the current and total number of questions.
+* Feedback to the user includes the change of background color of the answer the user hovers over and the cursor changing to a pointer (these features are disabled on smaller screens).
+
+#### End of Game page
+
+<details>
+<summary>Screenshot of End of Quiz Section </summary>
+<img src="docs/readme_image/endofquizsection.jpg" width="750">
+</details>
+
+* Features a personalized message posted on the page, depending on the score of the user. 
+* An image in the center of the page makes the display more eye-catching and appealing.
+* Includes the score of the user at the end of the game.
+* Below the image, two clickable yes or no buttons allow the user to play again or not to play again.
+
+#### Header
+
+<details>
+<summary>Screenshot of Header</summary>
+<img src="docs/readme_image/header.jpg" width="550">
+</details>
+
+* The header remains on display at the top of the game throughout a user's journey through the game.
+* It tells the user clearly what the content and purpose of the application are.
+
+#### Footer
+
+<details>
+<summary>Screenshot of Footer</summary>
+<img src="docs/readme_image/footer.jpg" width="550">
+</details>
+
+* Featured on all pages (and the 404 page).
+* Includes links to the social media pages that the general quiz maintains: Facebook, Instagram, and YouTube.
+* All links open in a new window.
+
+
+
+
+
 
 
 
