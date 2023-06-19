@@ -217,6 +217,23 @@ As described in the previous section with wireframes, the online game site inclu
 * All links open in a new window.
 * The footer is fully responsive.
 
+#### Future Additions
+
+* To enhance the UX, the user could be given an option on the final page to save their scores. Another page or section could then appear that would display past scores of the user. 
+* The Challenge Mode will be added, where the user will ask questions for other users. I will also add Timer for the quiz that will automatically run out. 
+
+
+### Surface
+
+The surface design of the site aims to attract the user to participate in the general quiz, have fun, entertain the user, and spend more time on my website while maintaining easy readability. Backr
+
+#### Color Scheme
+
+
+
+
+
+
 
 
 
