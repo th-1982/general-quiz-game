@@ -225,9 +225,41 @@ As described in the previous section with wireframes, the online game site inclu
 
 ### Surface
 
-The surface design of the site aims to attract the user to participate in the general quiz, have fun, entertain the user, and spend more time on my website while maintaining easy readability. Backr
+The surface design of the site aims to attract the user to participate in the general quiz, have fun, entertain the user, and spend more time on my website while maintaining easy readability. A cloud background image, which is a great way to introduce a beautiful sense of calm to any website, was used. The color scheme and font were chosen accordingly.
 
 #### Color Scheme
+
+The color scheme aims to create an aesthetic feeling of style and appeal. The davy's gray and white colors were chosen together with the cloud background image for the purpose of simplicity, calmness, and a desire for them to blend together. All clickable buttons are styled with hot magenta color. The Footer is styled light blue. The remaining features on the site,  silver background color, and font, are used in order to maintain contrast and readability.
+
+![Color Scheme](docs/readme_image/colorscheme.jpg)
+
+#### Font
+
+Open Sans is the font used for high-level headings in the game. The clickable text of level choices and answers and the score counter are in a matching Lato font. These fonts were chosen to maintain clarity and legibility on the site.
+
+## Technologies Used
+
+### Languages
+* HTML
+* CSS
+* JavaScript
+
+### Frameworks & Tools
+* Git
+* GitHub
+* Gitpod
+* Balsamiq
+* Google Fonts
+* Font Awesome
+* Coolors.co
+* Favicon
+* TinyPNG
+* Mockup Generator
+
+### Helpful sites
+
+The following site was helpful while developing the code to help with problem-solving
+
 
 
 
