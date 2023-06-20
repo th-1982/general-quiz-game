@@ -251,14 +251,34 @@ Open Sans is the font used for high-level headings in the game. The clickable te
 * Balsamiq
 * Google Fonts
 * Font Awesome
-* Coolors.co
+* Coolors. co
 * Favicon
 * TinyPNG
 * Mockup Generator
+* W3 Schools
 
 ### Helpful sites
 
-The following site was helpful while developing the code to help with problem-solving
+The following site was helpful while developing the code to help with problem-solving:
+
+* <a href="https://www.w3schools.com/">W3 Schools</a>
+* <a href="https://stackoverflow.com">Stack Overflow</a>
+* <a href="https://www.youtube.com/watch?v=S944-epyYuI">Javascript OnSubmit Event Tutorial for Beginners | How to Handle Forms in Javascript</a>
+* <a href="https://www.youtube.com/watch?v=PBcqGxrr9g8">How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS &     JavaScript</a>
+
+## Testing and Validation
+
+### HTML Validation
+
+ The W3C markup Validation Service was used to validate the HTML of the website. The code passed with no errors or warnings.
+
+ <details>
+<summary>Welcome, Quiz and End of Quiz section</summary>
+<img src="" width="750">
+</details>
+
+
+
 
 
 
