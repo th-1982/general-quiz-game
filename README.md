@@ -277,14 +277,17 @@ The following site was helpful while developing the code to help with problem-so
 <img src="docs/readme_image/indexhtmlvalidation.jpg" width="750">
 </details>
 
+
 <details>
 <summary>404 Error Page</summary>
 <img src="docs/404htmlvalidation.jpg" width="750">
 </details>
 
+
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. The code passed with no errors or warnings.
+
 
 <details>
 <summary>CSS Validation Screenshot</summary>
@@ -292,10 +295,69 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 </details>
 
 
+### JavaScript Validation
 
 
+The linter <a href="https://jshint.com/">JSHint</a> was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files. All remaining warnings stem from the JShint configuration and are not related to the code.
 
 
+<details>
+<summary>script.js validation welcome section</summary>
+<img src="docs/readme_image/jshintscriptwelcomescrn.jpg" width="750">
+</details>
+
+
+<details>
+<summary>script.js validation choose level section</summary>
+<img src="docs/readme_image/jshintscriptchooselevelscrn.jpg" width="750">
+</details>
+
+
+<details>
+<summary>script.js validation quiz section and score tracker</summary>
+<img src="docs/readme_image/jshintquizscrn.jpg" width="750">
+</details>
+
+
+<details>
+<summary>script.js validation end of quiz section1</summary>
+<img src="docs/readme_image/jshintendofquizscrn1.jpg" width="750">
+</details>
+
+
+<details>
+<summary>script.js validation end of quiz section2</summary>
+<img src="docs/readme_image/jshintendofquizscrn2.jpg" width="750">
+</details>
+
+
+<details>
+<summary>questions.js validation1</summary>
+<img src="docs/readme_image/jshintquestion1.jpg" width="750">
+</details>
+
+
+<details>
+<summary>questions.js validation2</summary>
+<img src="docs/readme_image/jshintquestion2.jpg" width="750">
+</details>
+
+
+<details>
+<summary>questions.js validation3</summary>
+<img src="docs/readme_image/jshintquestion3.jpg" width="750">
+</details>
+
+
+<details>
+<summary>questions.js validation4</summary>
+<img src="docs/readme_image/jshintquestion4.jpg" width="750">
+</details>
+
+<details>
+<summary>questions.js validation5</summary>
+<img src="docs/readme_image/jshintquestion5.jpg" width="750">
+</details>
 
 
 
