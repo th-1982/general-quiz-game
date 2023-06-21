@@ -25,14 +25,16 @@ h3 {
     text-align: center;
 }
 
-label, button {
+label,
+button,
+.label {
     cursor: pointer;
 }
 
 /* heading */
 header {
     text-align: center;
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
     margin-top: 10px;
 }
 
@@ -67,7 +69,6 @@ h1 {
     font-size: 50px;
 }
 
-
 h3 {
     font-size: 24px;
     margin-top: 10px;
@@ -77,7 +78,8 @@ h3 {
 /* styling of welcome section and choose level section */
 
 input,
-label {
+label,
+.label {
     font-size: 24px;
     margin-top: 20px;
 }
@@ -98,13 +100,12 @@ label {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     margin-left: 15px;
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
     color: rgb(255, 255, 255);
-
 }
 
 #welcome input:focus {
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
     color: rgb(255, 255, 255);
 
 }
@@ -114,7 +115,7 @@ button {
     border-radius: 10px;
     width: 100px;
     height: 40px;
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: 600;
@@ -123,7 +124,7 @@ button {
 
 button:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 #rules {
@@ -144,7 +145,6 @@ ul li {
     text-align: left;
 }
 
-
 .show {
     display: block;
 }
@@ -163,7 +163,7 @@ ul li {
     display: none;
 }
 
-#quiz-div label {
+.label {
     display: block;
     width: 300px;
     height: 40px;
@@ -173,12 +173,12 @@ ul li {
     margin-right: auto;
     border: 2px solid rgb(255, 255, 255);
     padding-top: 10px;
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
 }
 
-#quiz-div label:hover {
+.label:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 #score-tracker {
@@ -202,7 +202,7 @@ ul li {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 100px;
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
     color: rgb(255, 255, 255);
     height: 40px;
     font-size: 20px;
@@ -213,7 +213,7 @@ ul li {
 
 #yes:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 .congratulatory-image {
@@ -228,7 +228,7 @@ ul li {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     width: 100px;
-    background-color: rgb(255, 0, 213);
+    background-color: rgb(133, 0, 111);
     color: rgb(255, 255, 255);
     height: 40px;
     font-size: 20px;
@@ -238,7 +238,7 @@ ul li {
 
 #play-again:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 /* styling of footer and social media links */
@@ -249,11 +249,11 @@ footer {
     margin-top: 20px;
     height: 100px;
     width: 100%;
-    background-color: rgb(230, 236, 240); 
+    background-color: rgb(230, 236, 240);
 }
 
 footer a {
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
     padding: 7px;
     font-size: 24px;
     margin: 0 20px 0 20px;
@@ -268,14 +268,14 @@ footer a {
 .error-container h1 {
     font-size: 30px;
     margin-top: 20px;
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 
 .error-container p {
     font-size: 15px;
     margin-top: 10px;
-    color: rgb(255, 0, 213);
+    color: rgb(133, 0, 111);
 }
 
 /* Media queries */
@@ -296,7 +296,9 @@ footer a {
         font-size: 50px;
     }
 
-    label, button {
+    label,
+    button,
+    .label {
         cursor: default;
     }
 }
@@ -317,7 +319,11 @@ footer a {
     }
 
     #welcome input {
-        width: 250px;
+        width: 200px;
+    }
+
+    .label {
+        width: 200px;
     }
 
     #rules {
