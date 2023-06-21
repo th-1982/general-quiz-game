@@ -229,7 +229,7 @@ The surface design of the site aims to attract the user to participate in the ge
 
 #### Color Scheme
 
-The color scheme aims to create an aesthetic feeling of style and appeal. The davy's gray and white colors were chosen together with the cloud background image for the purpose of simplicity, calmness, and a desire for them to blend together. All clickable buttons are styled with hot magenta color. The Footer is styled light blue. The remaining features on the site,  silver background color, and font, are used in order to maintain contrast and readability.
+The color scheme aims to create an aesthetic feeling of style and appeal. The davy's gray and white colors were chosen together with the cloud background image for the purpose of simplicity, calmness, and a desire for them to blend together. All clickable buttons are styled with purple color. The Footer is styled light blue. The remaining features on the site,  silver background color, and font, are used in order to maintain contrast and readability.
 
 ![Color Scheme](docs/readme_image/colorscheme.jpg)
 
@@ -273,10 +273,23 @@ The following site was helpful while developing the code to help with problem-so
  The W3C markup Validation Service was used to validate the HTML of the website. The code passed with no errors or warnings.
 
  <details>
-<summary>Welcome, Quiz and End of Quiz section</summary>
-<img src="" width="750">
+<summary>Welcome, Choose Level, Quiz and End of Quiz section</summary>
+<img src="docs/readme_image/indexhtmlvalidation.jpg" width="750">
 </details>
 
+<details>
+<summary>404 Error Page</summary>
+<img src="docs/404htmlvalidation.jpg" width="750">
+</details>
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. The code passed with no errors or warnings.
+
+<details>
+<summary>CSS Validation Screenshot</summary>
+<img src="docs/cssvalidation.jpg" width="750">
+</details>
 
 
 
