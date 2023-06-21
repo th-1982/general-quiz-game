@@ -277,77 +277,63 @@ The following site was helpful while developing the code to help with problem-so
 <img src="docs/readme_image/indexhtmlvalidation.jpg" width="750">
 </details>
 
-
 <details>
 <summary>404 Error Page</summary>
 <img src="docs/404htmlvalidation.jpg" width="750">
 </details>
 
-
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. The code passed with no errors or warnings.
-
 
 <details>
 <summary>CSS Validation Screenshot</summary>
 <img src="docs/cssvalidation.jpg" width="750">
 </details>
 
-
 ### JavaScript Validation
 
-
 The linter <a href="https://jshint.com/">JSHint</a> was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files. All remaining warnings stem from the JShint configuration and are not related to the code.
-
 
 <details>
 <summary>script.js validation welcome section</summary>
 <img src="docs/readme_image/jshintscriptwelcomescrn.jpg" width="750">
 </details>
 
-
 <details>
 <summary>script.js validation choose level section</summary>
 <img src="docs/readme_image/jshintscriptchooselevelscrn.jpg" width="750">
 </details>
-
 
 <details>
 <summary>script.js validation quiz section and score tracker</summary>
 <img src="docs/readme_image/jshintquizscrn.jpg" width="750">
 </details>
 
-
 <details>
 <summary>script.js validation end of quiz section1</summary>
 <img src="docs/readme_image/jshintendofquizscrn1.jpg" width="750">
 </details>
-
 
 <details>
 <summary>script.js validation end of quiz section2</summary>
 <img src="docs/readme_image/jshintendofquizscrn2.jpg" width="750">
 </details>
 
-
 <details>
 <summary>questions.js validation1</summary>
 <img src="docs/readme_image/jshintquestion1.jpg" width="750">
 </details>
-
 
 <details>
 <summary>questions.js validation2</summary>
 <img src="docs/readme_image/jshintquestion2.jpg" width="750">
 </details>
 
-
 <details>
 <summary>questions.js validation3</summary>
 <img src="docs/readme_image/jshintquestion3.jpg" width="750">
 </details>
-
 
 <details>
 <summary>questions.js validation4</summary>
@@ -359,11 +345,101 @@ The linter <a href="https://jshint.com/">JSHint</a> was used to validate the Jav
 <img src="docs/readme_image/jshintquestion5.jpg" width="750">
 </details>
 
+### Accessibility and Performance
+
+ * The lighthouse feature on Google Devtools assessed accessibility and performance. All pages score high on accessibility.  
+ * I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools
+
+ <details>
+<summary>Welcome, Choose level, Quiz and End of Quiz Page</summary>
+<img src="docs/readme_image/indexlighthousetesting.jpg" width="750">
+</details>
 
 
 
+### Outstanding Issues
 
+There are currently no outstanding issues that the developer is aware of.
 
+### Browser Compatability
+
+The websites compatability was tested on the following browsers:
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+
+### Testing User Stories
+
+1. As a first time user, I want to easily navigate though the quiz.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Section | create a username and submit | The choose a level section displays | Works as expected |
+| Choose A Level Section | Click on the choosen level and next button | The game starts | Works as expected |
+| Quiz Section | Click through the answers | New questions are continuously displayed | Works as expected |
+| End of Game Page | Choose to play again | Welcome page displays | Works as expected |
+
+2. As a first time user, I want to get clear feedback on my score.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz page | Click quiz answers | failed and correct answer scores are updated and displayed below the answers | Works as expected |
+
+3. As a first time user, I want to easily return to the beginning of the game and play again.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| End of Game page | Click on Yes or No of the Play Again button | Links back to the welcome section and the game starts over | Works as expected |
+
+4. As a returning user, I want to try a higher-level game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Choose A Level | Choose level of game at which to play | Game will play at chosen level | Works as expected |
+
+5. As a returning user, find out more about the game developer.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Find social media links | Works as expected | 
+
+6. As the site owner, I want users to interact with the game, stay engaged and enjoy the challenge.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Section | Input a username and submit | The choose a level section displays | Works as expected |
+| Choose A Level Section | Click on the choosen level and next button | The game starts | Works as expected |
+| Quiz Section | Click through the answers | New questions are continuously displayed | Works as expected |
+| End of Game Page | Choose to play again | Welcome page displays | Works as expected |
+
+#### Room for improvement on User Stories
+
+A feature that allows returning users to save their scores still needs to be added and could be implemented in the future to enhance users' experience. The Challenge Mode will be added, where the user will ask questions for other users. I will also add Timer for the quiz that will automatically run out. 
+
+## Deployment & Development
+
+The website was deployed using GitHub Pages by following these steps:
+
+1. In the GitHub respository navigate to the Settings tab.
+2. Select Pages from the menu on the left-hand side of the page.
+3. For the source select Branch: 'main' and then select: 'save'.
+4. After the webpage refreshes automatically a ribbon at the top will displays the following message: "Your site is live at https://th-1982.github.io/general-quiz-game/"
+
+The website repository can be forked by the following steps:
+
+1. Go to the GitHub repository.
+2. Click on the Fork button in the upper right hand corner.
+
+The repository can be cloned by the following steps:
+
+1. Got to the GitHub repository.
+2. Locade the Code button above the list of files and click on it.
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
 
 
 
