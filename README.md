@@ -85,7 +85,7 @@ The General Quiz is a multiple-choice online quiz testing the users' general kno
 ### Strategy
 
 #### Target Audience
-* Users are interested in history, biology, geography, movies, and sports.
+* Users are interested in history, biology, geography, IT, movies, and sports.
 * Users are looking for entertaining and enlightening content online.
 
 
@@ -284,7 +284,7 @@ The following site was helpful while developing the code to help with problem-so
 
 <details>
 <summary>404 Error Page</summary>
-<img src="docs/404htmlvalidation.jpg" width="750">
+<img src="docs/readme_image/404htmlvalidation.jpg" width="750">
 </details>
 
 ### CSS Validation
@@ -426,19 +426,19 @@ A feature that allows returning users to save their scores still needs to be add
  
 1. I Encountered a bug where on the play again page After selecting an option and starting again, the values of the previous scores and answers were still there. 
 
-* Reset all data when a user presses yes or no to play again
+* I reseted all data when a user presses yes or no to play again
 
 2. I Encountered bug the form would not prevent default event from occurring :
 
-* Remove the form entirely and use the button to click
+* I remove the form entirely and use the button to click
 
 3. I Encountered a bug where when the users do not input their name, the following section would still show 
 
-* Added a required attribute to the HTML
+*  I added a required attribute to the HTML
 
 4.  I Encountered a bug where the first question always showed even when go to next.
 
-* Replace the innerText of the section with the next question.
+* I replace the innerText of the section with the next question.
 
 ## Deployment & Development
 
