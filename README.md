@@ -1,6 +1,10 @@
 # General Quiz
 (Developer: Theresa Wolff)
 
+![Mockup image](docs/readme_image/mockup.jpg)
+
+[Live webpage](https://th-1982.github.io/general-quiz-game/)
+
 ## Table of Content
 
 
@@ -39,6 +43,7 @@
    * [Font](#Font)
 
 4. [Technologies Used](#Technologies-Used)
+
    i. [Language](#Languages)
 
    ii. [Frameworks & Tools](#Frameworks--Tools)
@@ -417,6 +422,24 @@ The websites compatability was tested on the following browsers:
 
 A feature that allows returning users to save their scores still needs to be added and could be implemented in the future to enhance users' experience. The Challenge Mode will be added, where the user will ask questions for other users. I will also add Timer for the quiz that will automatically run out. 
 
+## Bugs & Fixes
+ 
+1. I Encountered a bug where on the play again page After selecting an option and starting again, the values of the previous scores and answers were still there. 
+
+* Reset all data when a user presses yes or no to play again
+
+2. I Encountered bug the form would not prevent default event from occurring :
+
+* Remove the form entirely and use the button to click
+
+3. I Encountered a bug where when the users do not input their name, the following section would still show 
+
+* Added a required attribute to the HTML
+
+4.  I Encountered a bug where the first question always showed even when go to next.
+
+* Replace the innerText of the section with the next question.
+
 ## Deployment & Development
 
 The website was deployed using GitHub Pages by following these steps:
@@ -440,6 +463,37 @@ The repository can be cloned by the following steps:
 5. Change the current working directory to the one where you want the cloned directory.
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone.
+
+## Credits
+
+### Media
+* The background image and  End of the Quiz page image were taken from [pexels](https://www.pexels.com)
+* The image icon for the correct and wrong score were taken from [icon8](https://icons8.com/).
+* The 404 page image was taken from [pixabay](https://pixabay.com/illustrations/question-mark-question-response-1019820/)
+
+### Code
+
+Resources and inspiration came from many sources:
+
+* Geography Quiz by Ulrike Riemenschneider https://github.com/URiem/geography-game/blob/main/index.html - this was where I got the idea for my quiz. I enjoyed much of the functionality and features of his game and took inspriration from it as I was developing my own.
+* Code by Ulrike Riemenschneider https://github.com/URiem/geography-game helped me to set up the core functionality of the quiz.
+* The code  and instructions on how to build an online quiz were taken from youtube tutorial (stated above)
+* The following link gave me ideas how to validate user input https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/.
+* The functionality for keeping track of the score was inspired by the Love Maths project.
+* This README file was also taken and guided by the README file from https://github.com/URiem/geography-game/blob/main/README.md and https://github.com/Aylamccarthy/all-about-pokemon/blob/main/testing.md.
+* Some of the multiple-choice question and Code were also taken from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp.
+* The multiple-choice question were also take from https://www.mentimeter.com/de-DE/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#geography, https://www.bbc.co.uk/bitesize/guides/zscvw6f/revision/2 and https://www.britannica.com/quiz/41-questions-from-britannicas-most-popular-world-history-quizzes.
+* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/icons).
+
+### Acknowledgements
+
+I would like to thank:
+* My mentor Gareth McGirr for his help, feedback, advice, guidance and support.
+* The tutors, and slack community for their support.
+* My Family, for their encouragement and support along the way.
+
+
+
 
 
 
