@@ -270,6 +270,7 @@ The following site was helpful while developing the code to help with problem-so
 * <a href="https://stackoverflow.com">Stack Overflow</a>
 * <a href="https://www.youtube.com/watch?v=S944-epyYuI">Javascript OnSubmit Event Tutorial for Beginners | How to Handle Forms in Javascript</a>
 * <a href="https://www.youtube.com/watch?v=PBcqGxrr9g8">How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS &     JavaScript</a>
+* <a href="https://www.youtube.com/watch?v=Jj42_s3KnuM">Create a custom 404 error page | HTML</a>
 
 ## Testing and Validation
 
