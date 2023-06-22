@@ -123,7 +123,7 @@ At the early stage, the site will include a welcome section that displays the ga
 
 #### Future Additions
 
-At the current stage of development, the user gets only essential feedback on their progress through a score tally below the question displayed. More feedback could be implemented in the future, such as delayed loading of the next question. During this delay, the chosen answer color background would change to indicate whether the answer was failed (red background) or correct (green background).
+At the current stage of development, the user gets only essential feedback on their progress through a score tally below the question displayed. More feedback could be implemented in the future, such as delayed loading of the next question. During this delay, the chosen answer color background would change to indicate whether the answer was wrong (red background) or correct (green background).
 However, it would enhance the user's experience to save scores and keep track of progress. This could be achieved by adding a 'save score' option on the final page.
 Finally, the Challenge Mode will be added, where the user will ask questions for other users. I will also add Timer for the quiz that will automatically run out. 
 
@@ -138,7 +138,7 @@ The structure of the initial site will include three sections incorporated in th
 
 ![Welcome](docs/wireframe/welcomesectionwireframe.jpg)
 
-2. **Choose Level Section** with four difficulty levels of the game to chhose from.
+2. **Choose Level Section** with four difficulty levels of the game to choose from.
 
 ![Level](docs/wireframe/chooselevelwireframe.jpg)
 
@@ -154,7 +154,7 @@ The structure of the initial site will include three sections incorporated in th
 
 ### Skeleton
 
-As described in the previous section with wireframes, the online game site includes four interactive sections: a heading, a central display area, and a footer. The welcome section requires the user to create a username to continue the game. The user is then prompted to choose the level they want to play the game. Upon choosing a level, the game loads and runs, adding to the score of correct or failed answers as the answers are chosen. A page displaying the final score is displayed at the end of the game.
+As described in the previous section with wireframes, the online game site includes four interactive sections, a heading, a central display area, and a footer. The welcome section requires the user to create a username to continue the game. The user is then prompted to choose the level they want to play the game. Upon choosing a level, the game loads and runs, adding to the score of correct or wrong answers as the answers are chosen. A page displaying the final score is displayed at the end of the game.
 
 #### Welcome Section
 
@@ -173,7 +173,7 @@ As described in the previous section with wireframes, the online game site inclu
 </details>
 
 * Features four clickable elements containing the choices of levels the user can opt for: Beginner, Intermediate, Advanced, and Expert.
-* Includes the next buuton for the user to navigate to the quiz section.
+* Includes the next buuton for the user to navigate to the next section.
 
 #### Quiz Section and Score Tracker
 
@@ -185,7 +185,7 @@ As described in the previous section with wireframes, the online game site inclu
 * Features the level the user has chosen.
 * Features the question displayed at the top of the central content area.
 * Three clickable text elements contain the multiple-choice answers.
-* A scoring area below the answers updates the correct and failed answer tally every time the user chooses an answer. It also keeps track of the current and total number of questions.
+* A scoring area below the answers updates the correct and wrong answer tally every time the user chooses an answer. It also keeps track of the current and total number of questions.
 * Feedback to the user includes the change of background color of the answer the user hovers over and the cursor changing to a pointer (these features are disabled on smaller screens).
 
 #### End of Game page
@@ -326,27 +326,27 @@ The linter <a href="https://jshint.com/">JSHint</a> was used to validate the Jav
 </details>
 
 <details>
-<summary>questions.js validation1</summary>
+<summary>questions1.js validation</summary>
 <img src="docs/readme_image/jshintquestion1.jpg" width="750">
 </details>
 
 <details>
-<summary>questions.js validation2</summary>
+<summary>questions2.js validation</summary>
 <img src="docs/readme_image/jshintquestion2.jpg" width="750">
 </details>
 
 <details>
-<summary>questions.js validation3</summary>
+<summary>questions3.js validation</summary>
 <img src="docs/readme_image/jshintquestion3.jpg" width="750">
 </details>
 
 <details>
-<summary>questions.js validation4</summary>
+<summary>questions4.js validation</summary>
 <img src="docs/readme_image/jshintquestion4.jpg" width="750">
 </details>
 
 <details>
-<summary>questions.js validation5</summary>
+<summary>questions5.js validation</summary>
 <img src="docs/readme_image/jshintquestion5.jpg" width="750">
 </details>
 
@@ -389,7 +389,7 @@ The websites compatability was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Quiz page | Click quiz answers | failed and correct answer scores are updated and displayed below the answers | Works as expected |
+| Quiz page | Click quiz answers | wrong and correct answer scores are updated and displayed below the answers | Works as expected |
 
 3. As a first time user, I want to easily return to the beginning of the game and play again.
 
