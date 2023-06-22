@@ -1,8 +1,7 @@
 // JavaScript for welcome section and creating a username
+
 // get an element using its ID
-
 let inputElement = document.getElementById('user-input');
-
 let usersName = '';
 let chosenLevel = '';
 let questionsDiv = document.getElementById("questions-div");
@@ -10,17 +9,13 @@ let questionsDiv = document.getElementById("questions-div");
 // this function is for when user presses submit i want to store the users name
 // this is for welcome section
 function saveUsersName(event) {
-
+    
     // this is going to stop the page from refreshing
     event.preventDefault();
-
     usersName = inputElement.value;
-
     let userh3 = document.getElementById('user');
     userh3.innerText = `Welcome ${usersName}`;
-
     let quizSections = document.getElementsByClassName('sections');
-
     quizSections[0].classList.add('hide');
     quizSections[1].classList.remove('hide');
     quizSections[1].classList.add('show');
@@ -34,7 +29,6 @@ function goToQuiz(event) {
     event.preventDefault();
 
     let levels = document.getElementsByName('level');
-
     levels.forEach(level => {
         if (level.checked == true) {
             let levelh3 = document.getElementById('level-choosen'); 
@@ -45,11 +39,9 @@ function goToQuiz(event) {
 
     // get all sections
     let quizSections = document.getElementsByClassName('sections');
-
     quizSections[1].classList.add('hide');
     quizSections[2].classList.remove('hide');
     quizSections[2].classList.add('show');
-
     let quizQuestionh3 = document.getElementById('quiz-question');
     let questionElements = document.getElementsByName('question');
     let questionLabelElements = document.getElementsByClassName('label');
@@ -58,7 +50,6 @@ function goToQuiz(event) {
     // changing options and labels
     // loop through the current questions
     Array(...questionLabelElements).forEach((question, index) => {
-
         question.value = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
         question.checked = false;
         questionLabelElements.item(index).textContent = arrayOfQuestions[`${choosenLevel}`][currentQuestion - 1].options[index];
@@ -331,7 +322,6 @@ let questionLabelElements = document.querySelectorAll('div[data-name="label-opti
 
 
 questionLabelElements.forEach(question => {
-
     // i want to loop through all the questions
     question.addEventListener('click', getOptionAndNextQuestion);
 });
