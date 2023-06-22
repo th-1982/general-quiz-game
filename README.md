@@ -293,7 +293,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 <details>
 <summary>CSS Validation Screenshot</summary>
-<img src="docs/cssvalidation.jpg" width="750">
+<img src="docs/readme_image/cssvalidation.jpg" width="750">
 </details>
 
 ### JavaScript Validation
@@ -436,7 +436,7 @@ A feature that allows returning users to save their scores still needs to be add
 
 *  I added a required attribute to the HTML
 
-4.  I Encountered a bug where the first question always showed even when go to next.
+4. I Encountered a bug where the first question always showed even when go to next.
 
 * I replace the innerText of the section with the next question.
 
